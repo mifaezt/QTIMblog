@@ -7,7 +7,11 @@ export default {
 		'./app.vue',
 	],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ['"TT Commons"', 'sans-serif'],
+			},
+		},
 	},
 	plugins: [],
 }

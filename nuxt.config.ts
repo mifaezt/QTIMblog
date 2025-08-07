@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
-	css: ['@/assets/css/main.css'],
+	css: ['@/assets/css/fonts.css', '@/assets/css/main.css'],
 	devtools: { enabled: true },
 	components: true,
 	postcss: {

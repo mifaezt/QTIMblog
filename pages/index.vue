@@ -1,6 +1,6 @@
 <template>
 	<section class="max-w-7xl mx-auto px-4 py-12">
-		<h1 class="text-4xl font-bold mb-10">Articles</h1>
+		<h1 class="text-4xl font-normal mb-10">Articles</h1>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 			<BlogCard v-for="post in posts" :key="post.id" :post="post" />
 		</div>

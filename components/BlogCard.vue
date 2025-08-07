@@ -8,19 +8,15 @@
 				class="w-full h-full object-cover transition group-hover:scale-105"
 			/>
 		</div>
-		<h2 class="text-lg font-semibold mb-2">{{ post.title }}</h2>
-		<p class="text-gray-500 text-sm line-clamp-3">{{ post.description }}</p>
-		<p class="text-gray-500 text-sm line-clamp-3">{{ post.preview }}</p>
+		<!-- <h2 class="text-lg font-semibold mb-2">{{ post.title }}</h2> -->
+		<p class="text-black-500 text-xl line-clamp-3">{{ post.description }}</p>
+		<!-- <p class="text-gray-500 text-sm line-clamp-3">{{ post.preview }}</p> -->
 	</NuxtLink>
 </template>
 
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import type { BlogPost } from '~/types/blog'
-
-// defineProps<{
-// 	post: BlogPost
-// }>()
 
 defineProps<{
 	post: {
