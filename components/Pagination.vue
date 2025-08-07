@@ -1,6 +1,5 @@
 <template>
 	<div class="flex gap-2">
-		<!-- Номера страниц -->
 		<NuxtLink
 			v-for="n in totalPages"
 			:key="n"
@@ -15,7 +14,6 @@
 			{{ n }}
 		</NuxtLink>
 
-		<!-- Кнопка "вперёд" -->
 		<NuxtLink
 			v-if="currentPage < totalPages"
 			:to="{ query: { page: currentPage + 1 } }"
