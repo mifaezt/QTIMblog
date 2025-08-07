@@ -1,16 +1,25 @@
 <template>
-	<NuxtLink :to="`/blog/${post.id}`" class="group block">
-		<div class="rounded overflow-hidden mb-4">
+	<NuxtLink
+		:to="`/blog/${post.id}`"
+		class="group block relative hover: transition-all duration-300 transform hover:-translate-y-5"
+	>
+		<div class="overflow-hidden mb-4">
 			<img
 				v-if="imageUrl"
 				:src="imageUrl"
 				alt="random"
-				class="w-full h-full object-cover transition group-hover:scale-105"
+				class="w-280 h-280 object-cover transition"
 			/>
 		</div>
 		<!-- <h2 class="text-lg font-semibold mb-2">{{ post.title }}</h2> -->
 		<p class="text-black-500 text-xl line-clamp-3">{{ post.description }}</p>
 		<!-- <p class="text-gray-500 text-sm line-clamp-3">{{ post.preview }}</p> -->
+		<NuxtLink
+			:to="`/posts/${post.id}`"
+			class="absolute left-4 bottom-4 text-sm text-blue-600 opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0"
+		>
+			Read more
+		</NuxtLink>
 	</NuxtLink>
 </template>
 
@@ -44,3 +53,13 @@ onMounted(async () => {
 	}
 })
 </script>
+
+<style scoped>
+.block:hover .absolute {
+	opacity: 1;
+	transform: translateY(0);
+	bottom: -10%;
+	left: 0;
+	color: var(--color-pink-light);
+}
+</style>

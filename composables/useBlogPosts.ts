@@ -2,7 +2,7 @@
 // import { useFetch, createError } from '#app'
 import type { BlogPost } from '~/types/blog'
 
-export const useBlogPosts = async (page: number = 1, limit: number = 6) => {
+export const useBlogPosts = async (page: number = 1, limit: number = 8) => {
 	const offset = (page - 1) * limit
 
 	const { data, error } = await useFetch<BlogPost[]>(
