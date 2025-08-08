@@ -1,75 +1,37 @@
-# Nuxt Minimal Starter
+# QTIM Blog — тестовый блок, статьи через api, изображения тоже
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Проект реализован на **Nuxt 4**, с использованием **Vue 3**, **Vite** и **TailwindCSS**.
 
-## Setup
+---
 
-Make sure to install dependencies:
+## Стек технологий
 
-```bash
-# npm
-npm install
+- [Nuxt 4](https://nuxt.com/) — фреймворк для Vue 3 с SSR и SSG
+- [Vue 3 Composition API](https://vuejs.org/) — декларативное создание компонентов
+- [Tailwind CSS](https://tailwindcss.com/) — утилитарная стилизация
 
-# pnpm
-pnpm install
+---
 
-# yarn
-yarn install
+## Запуск проекта
 
-# bun
-bun install
-```
+1. **Клонировать репозиторий**:
 
-## Development Server
+   ```bash
+   git clone <ссылка-на-репозиторий>
+   cd QTIMblog
+   ```
 
-Start the development server on `http://localhost:3000`:
+2. **Установить зависимости**:
 
-```bash
-# npm
-npm run dev
+   ```bash
+   npm install
+   ```
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+3. **Запустить проект**:
+   ```bash
+   npm run dev
+   ```
+   Проект будет доступен по адресу:
+   ```
+   http://localhost:3000
+   ```
