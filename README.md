@@ -17,7 +17,7 @@
 1. **Клонировать репозиторий**:
 
    ```bash
-   git clone <ссылка-на-репозиторий>
+   git clone https://github.com/mifaezt/QTIMblog
    cd QTIMblog
    ```
 
