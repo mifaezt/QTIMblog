@@ -4,9 +4,7 @@
 			Articles
 		</h1>
 
-		<div v-if="pending" class="grid grid-cols-1 md:grid-cols-4 gap-8">
-			<BlogCardSkeleton v-for="i in 4" :key="i" />
-		</div>
+		<div v-if="pending" class="grid grid-cols-1 md:grid-cols-4 gap-8"></div>
 
 		<div v-else-if="error" class="text-red-500">
 			Error loading posts: {{ error.message }}
@@ -35,6 +33,7 @@
 </template>
 
 <script setup lang="ts">
+import { computed, onMounted } from 'vue'
 const route = useRoute()
 
 const page = computed(() => {

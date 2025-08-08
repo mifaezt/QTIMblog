@@ -1,5 +1,5 @@
 // composables/useRandomImage.ts
-import { onMounted, ref } from '#imports'
+import { onMounted, ref } from 'vue'
 
 export default function useRandomImage() {
 	const imageUrl = ref<string | null>(null)
