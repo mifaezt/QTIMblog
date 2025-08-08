@@ -1,6 +1,3 @@
-// composables/useBlogPost.ts
-// import { useFetch, createError } from '#app'
-
 import type { BlogPost } from '~/types/blog'
 
 export const useBlogPost = async (id: string) => {

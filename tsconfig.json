@@ -2,11 +2,24 @@
 	"extends": "./.nuxt/tsconfig.json",
 	"compilerOptions": {
 		"strict": true,
-		"types": ["nuxt"],
+		"types": [
+			"nuxt",
+			"@nuxt/types",
+			"@nuxtjs/composition-api",
+			"@vue/composition-api",
+			"vite/client"
+		],
 		"paths": {
 			"~/*": ["./*"],
 			"@/*": ["./*"]
-		}
+		},
+		"moduleResolution": "node",
+		"allowJs": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"baseUrl": ".",
+		"types": ["vite/client"]
 	},
 	"include": [
 		"./.nuxt",
@@ -17,7 +30,8 @@
 		"./pages/**/*",
 		"./plugins/**/*",
 		"./app.vue",
-		"./error.vue"
+		"./error.vue",
+		"./types/**/*"
 	],
 	"exclude": ["node_modules"]
 }

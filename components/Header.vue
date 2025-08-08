@@ -1,15 +1,15 @@
 <template>
 	<header class="w-full py-4 bg-white">
 		<div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
-			<NuxtLink to="/" class="text-3xl font-Medium tracking-tight">
+			<NuxtLink to="/" class="text-3xl font-medium tracking-tight">
 				QTIM
 			</NuxtLink>
 
 			<nav class="flex items-center gap-6">
-				<NuxtLink to="/works" class="text-sm text-gray-800 hover:text-gray-500">
+				<NuxtLink to="/" class="text-sm text-gray-800 hover:text-gray-500">
 					Works
 				</NuxtLink>
-				<NuxtLink to="/about" class="text-sm text-gray-800 hover:text-gray-500">
+				<NuxtLink to="/" class="text-sm text-gray-800 hover:text-gray-500">
 					About
 				</NuxtLink>
 
@@ -24,7 +24,7 @@
 				</button>
 
 				<NuxtLink
-					to="/contact"
+					to="/"
 					class="px-4 py-2 bg-black text-white rounded-full text-sm font-medium hover:bg-gray-900 transition"
 				>
 					Let’s work

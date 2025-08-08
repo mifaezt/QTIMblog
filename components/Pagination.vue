@@ -17,7 +17,7 @@
 		<NuxtLink
 			v-if="currentPage < totalPages"
 			:to="{ query: { page: currentPage + 1 } }"
-			class="w-10 h-10 flex items-center justify-center rounded-lg text-sm font-medium transition-colors bg-[#f4f4f4] text-black hover:bg-[#e5e5e5]"
+			class="w-10 h-10 flex items-center justify-center rounded-lg text-sm font-medium transition-colors border text-black hover:bg-[#e5e5e5]"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

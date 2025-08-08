@@ -1,5 +1,3 @@
-// composables/useBlogPosts.ts
-// import { useFetch, createError } from '#app'
 import type { BlogPost } from '~/types/blog'
 
 export const useBlogPosts = async (page: number = 1, limit: number = 8) => {
@@ -22,7 +20,7 @@ export const useBlogPosts = async (page: number = 1, limit: number = 8) => {
 		})
 	}
 
-	const totalItems = 30 // можно задать вручную, API не возвращает total
+	const totalItems = 30
 	const totalPages = Math.ceil(totalItems / limit)
 
 	return {
