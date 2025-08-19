@@ -1,6 +1,12 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2025-08-07',
 	css: ['@/assets/css/fonts.css', '@/assets/css/main.css'],
+	ssr: false,
+	nitro: {
+		prerender: {
+			routes: ['/'],
+		},
+	},
 	devtools: { enabled: true },
 	components: true,
 	runtimeConfig: {

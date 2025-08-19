@@ -20,7 +20,7 @@
 						src="/assets/icons/flag.png"
 						alt="English"
 						class="w-4 h-4 object-cover"
-					/>
+					>
 				</button>
 
 				<NuxtLink
